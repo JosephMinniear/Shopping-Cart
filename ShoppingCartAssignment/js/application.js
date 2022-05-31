@@ -21,7 +21,7 @@ var updateCost = function() {
     if (!newItem || isNaN(newPrice)) {
       alert('You must enter both item name and unit price to add a new item.');
     } else {
-      $('#lastRow').before("<tr><td class='item'>" + newItem + "</td><td class='price'>" + newPrice + "</td><td class='qty'><input type='number'></input></td><td class='cost'></td><td><button class='btn btn-xs remove'><i>Remove</i></button></td></tr>");  
+      $('#lastRow').before("<tr><td class='item'>" + newItem + "</td><td class='price'>" + newPrice + "</td><td class='qty'><input type='number'></input></td><td class='cost'></td><td><button class='btn btn-danger btn-xs remove'><i>Remove</i></button></td></tr>");  
     }
     $('tr').find('#item, #price').val('');
   };
